@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Delius+Swash+Caps&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:ital,wght@1,500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:ital,wght@0,400;1,500&family=Pacifico&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Oswald:wght@700&family=Overlock+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Freehand&family=Oswald:wght@700&family=Overlock+SC&display=swap');
+:root{
+    --color-primary:#0073ff;
+    --color-white:#e9e9e9;
+    --color-black:#141d28;
+    --color-black-1:#212b38;
+    --color-silver:#C0C0C0;
+    --color: #24262b;
+    --color-mediumblue:#0000cd;
+    --color-black2:#000000;
+    --color-darkred:#8b0000;
+    --color-lightslategrey:#778899;
+
+     
+}
+
+
+/* Start Header */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: IBM Plex Sans;
+}
+.menubar{
+    background-color:var(--color-black);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+.name{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Pacifico;
+    font-size: 15px;
+    width: 50;
+    color:var(--color-white);
+    height: auto;
+}
+.name span{
+    color:var(--color-primary);
+}
+.menubar ul{
+    list-style: none;
+    display:flex;
+}
+
+.menubar ul li{
+    padding: 10px 30px;
+    font-family:Belanosima;
+    font-size: 18px;
+    
+}
+.menubar ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 18px;
+    transition:all 0.3s;
+
+}
+.menubar ul li a:hover{
+    background: var(--color-lightslategrey);
+    border: #212b38;
+    border-radius: 5px;
+    
+}
+.fa{
+    color: #e9e9e9;
+
+}
+
+/* End of the Header Section */
+
+
+/* Start Slider Section */ 
+body{
+    margin:0;
+    padding: 0;
+    background-position: center;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('lava.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    animation: bgChange 80s linear infinite;
+}
+@keyframes bgChange{
+    0%{
+        background-image: url('cupcake7.jpg');
+    }
+    20%{
+        background-image: url('lava.jpg');
+    }
+    30%{
+        background-image: url('cake1.jpg');
+    }
+    45%{
+        background-image: url('cake5.jpg');
+    }
+    60%{
+        background-image: url('Macarons1.jpg');
+    }
+    70%{
+        background-image: url('cake2.jpg');
+    }
+    75%{
+        background-image: url('cake6.jpg');
+    }
+    95%{
+        background-image: url('cake3.jpg');
+    }
+    }
+
+
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.principal{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.principal h1{
+    font-size: 80px;
+    margin-bottom: 0px;
+    font-family: Oswald ;
+
+}
+.principal h1 span{
+    color: rgb(231, 245, 27);
+    font-family: Freehand;
+    font-size: 100px;
+
+}
+.about{
+    font-size: 20px ;
+    text-align: center;
+    font-family: Overlock SC;
+    color:whitesmoke;
+   
+}
+/* End of the Slider Section */
+
+
+/* Start the Footer */
+body{
+    line-height: 1.5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    background-color: #C0C0C0;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+ul{
+    list-style: none;
+
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #0000cd		;
+    text-transform: capitalize;
+    font-family: Fjalla One;
+    margin-bottom: 10px;
+    font-weight: 800;
+    position: relative;
+    padding-top: 25px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: 	#000000;
+    transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: 	#778899;
+}
+h2{
+    text-align: center;
+    font-family: Capriola;
+    font-size: 35px;
+    color: 	#8b0000;
+}
+h3{
+    text-align: center;
+    font-family: Delius Swash Caps;
+    font-weight: 10px;
+    font-size: 15;
+}
+h6{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 50px;
+}
+/* End of the Footer Section*/
